@@ -33,6 +33,18 @@ resource "aws_alb" "ecs_cluster_alb" {
     }
 }
 
+resource "aws_alb_target_group" "ecs_default_target_group" {
+    name = "${var.ecs_cluster_name}-ALB"
+    port = 80
+    protocol = "HTTP"
+    vpc_id = data.terraform_remote_state.infrastructure.vpc_id
+
+    tags {
+        Name = "${var.ecs_cluster_name}-TG"
+    }
+  
+}
+
 resource "aws_route53_record" "ecs_load_balancer_record" {
     name = "*.${var.ecs_domain_name}"
     type = "A"
