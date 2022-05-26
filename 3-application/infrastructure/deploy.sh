@@ -2,7 +2,8 @@
 
 REGION="ap-south-1"
 SERVICE_NAME="springbootapp"
-SERVICE_TAG="${SERVICE_TAG}"
+SERVICE_TAG="v1"
+AWS_ACCOUNT_ID="485031388770"
 ECR_REPO_URL="${AWS_ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com/${SERVICE_NAME}"
 
 if [ "$1" = "build" ];then
