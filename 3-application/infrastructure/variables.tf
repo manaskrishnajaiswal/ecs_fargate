@@ -1,9 +1,11 @@
 variable "region" {
-  default = "us-east-1"
+  default = "ap-south-1"
 }
 
 variable "remote_state_key" {}
 variable "remote_state_bucket" {}
+
+// Applicaton Variables
 variable "ecs_service_name" {}
 variable "docker_image_url" {}
 variable "memory" {}

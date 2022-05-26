@@ -1,6 +1,6 @@
 #!/bin/sh
 
-REGION="us-east-1"
+REGION="ap-south-1"
 SERVICE_NAME="springbootapp"
 SERVICE_TAG="${SERVICE_TAG}"
 ECR_REPO_URL="${AWS_ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com/${SERVICE_NAME}"

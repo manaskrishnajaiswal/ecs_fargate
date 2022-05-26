@@ -1,6 +1,6 @@
 # remote state
 remote_state_key = "PROD/platform.tfstate"
-remote_state_bucket = "YOUR_S3_BUCKET"
+remote_state_bucket = "ecs-fargate-terraform-remote-state-485031388770"
 
 # service variables
 ecs_service_name = "springbootapp"
